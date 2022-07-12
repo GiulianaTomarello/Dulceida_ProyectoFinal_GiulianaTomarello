@@ -59,6 +59,9 @@ section {
   display: flex;
   justify-content: center;
 }
+section .card {
+  margin: auto;
+}
 section .card-body {
   display: flex;
   justify-content: center;

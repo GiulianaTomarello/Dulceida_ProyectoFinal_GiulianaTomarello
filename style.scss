@@ -72,6 +72,10 @@ section{
     display: flex;
     justify-content: center;
 
+    .card{
+        margin: auto;
+    }
+
     .card-body{
         display: flex;
         justify-content: center;
@@ -133,6 +137,7 @@ section{
         transform: scale(1.1);
     }
  }
+
 
  
 

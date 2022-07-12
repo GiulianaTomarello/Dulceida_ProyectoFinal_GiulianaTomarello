@@ -2,10 +2,6 @@ body {
   width: 100%;
 }
 
-body {
-  width: 100%;
-}
-
 .informativo {
   margin-bottom: 0%;
   padding-top: 5px;
@@ -101,4 +97,77 @@ footer .nav-link:hover {
 }
 footer .bi:hover {
   transform: scale(1.1);
+}
+
+section {
+  width: 100%;
+  margin-top: 80px;
+}
+section .titulo_productos {
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+}
+section .titulo_productos:hover {
+  display: flex;
+  justify-content: center;
+  color: #797066;
+}
+section .card {
+  margin: auto;
+  margin-top: 30px;
+}
+section .titulos_seccionesproductos {
+  font-size: 20px;
+  margin: auto;
+}
+section .contenedorfila {
+  display: flex;
+  justify-content: center;
+}
+section .fila1 {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #a39789;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section .botones_secciones {
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+}
+section .botones_secciones:hover {
+  background-color: #797066;
+  border: 2px solid #a39789;
+}
+section .boton_quiero {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  color: white;
+}
+section .boton_quiero:hover {
+  background-color: #797066;
+  border: 2px solid #a39789;
+}
+
+@media screen and (min-width: 320px) {
+  .seccion_escritorio {
+    display: none;
+  }
+  .seccion_celular {
+    display: block;
+  }
+}
+@media screen and (min-width: 550px) {
+  .seccion_escritorio {
+    display: block;
+  }
+  .seccion_celular {
+    display: none;
+  }
 }/*# sourceMappingURL=productos.css.map */

@@ -2,6 +2,7 @@ body{
     width: 100%;
 }
 
+
 .informativo{
     margin-bottom: 0%;
     padding-top: 5px;
@@ -67,32 +68,7 @@ nav{
     }
 }
 
-section{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-
-    .card{
-        margin: auto;
-    }
-
-    .card-body{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    } 
-    .boton_seccion{
-        background-color: rgba(0, 0, 0, 0.9);
-        border: 1px solid rgba(0, 0, 0, 0.9);
-    }
-
-    .boton_seccion:hover{
-        background-color: #a39789;
-        border: 2px solid #a39789;
-    }
- }
-
- .informacion{
+.informacion{
     background-color: #ededed;
     margin-top: 100px;
 
@@ -110,7 +86,7 @@ section{
     }
  }
 
- .texto_ayuda{
+.texto_ayuda{
     background-color: #a39789;
     display: flex;
     justify-content: center;
@@ -138,7 +114,87 @@ section{
     }
  }
 
+ section{
+    width: 100%;
+    margin-top: 80px;
 
- 
+    .titulo_productos{
+        display: flex;
+        justify-content: center;
+        transition: all 1s;
+    }
 
+    .titulo_productos:hover{
+        display: flex;
+        justify-content: center;
+        color: #797066;
+    }
 
+    .card{
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .titulos_seccionesproductos{
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .contenedorfila{
+            display: flex;
+            justify-content: center;
+    }
+
+    .fila1{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: #a39789;
+        border-radius: 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+    .botones_secciones{
+        margin-top: 15px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.9);
+    }
+
+    .botones_secciones:hover{
+        background-color: #797066;
+        border: 2px solid #a39789;
+    }
+
+    .boton_quiero{
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.9);
+        color: white;
+    }
+
+    .boton_quiero:hover{
+        background-color: #797066;
+        border: 2px solid #a39789;
+    }
+ }
+
+ @media screen and (min-width: 320px){
+        .seccion_escritorio{
+            display: none;
+        }
+        .seccion_celular{
+            display: block;
+        }
+ }
+
+ @media screen and (min-width: 550px){
+    .seccion_escritorio{
+        display: block;
+    }
+    .seccion_celular{
+        display: none;
+    }
+}

@@ -1,13 +1,13 @@
 body{
     width: 100%;
 }
-
+$colorclaro_botones: #a39789;
 
 .informativo{
     margin-bottom: 0%;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #a39789;
+    background-color: $colorclaro_botones;
     color: white;
     display: flex;
     justify-content: center;
@@ -56,7 +56,7 @@ nav{
 
 nav{
     .nav-link:hover{
-        color: #a39789;
+        color: $colorclaro_botones;
     }
     .navbar-brand{
         transition: all 3s;
@@ -64,7 +64,7 @@ nav{
 
     .navbar-brand:hover{
         transform: scale(1.1);
-        color: #a39789;
+        color: $colorclaro_botones;
     }
 }
 
@@ -87,7 +87,7 @@ nav{
  }
 
 .texto_ayuda{
-    background-color: #a39789;
+    background-color: $colorclaro_botones;
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -107,7 +107,7 @@ nav{
         color: white;
     }
     .nav-link:hover{
-        color: #a39789;
+        color: $colorclaro_botones;
     }
     .bi:hover{
         transform: scale(1.1);
@@ -149,7 +149,7 @@ nav{
         margin: auto;
         margin-top: 30px;
         margin-bottom: 20px;
-        background-color: #a39789;
+        background-color: $colorclaro_botones;
         border-radius: 20px;
         padding: 30px;
         display: flex;
@@ -166,7 +166,7 @@ nav{
 
     .botones_secciones:hover{
         background-color: #797066;
-        border: 2px solid #a39789;
+        border: 2px solid $colorclaro_botones;
     }
 
     .boton_quiero{
@@ -177,7 +177,7 @@ nav{
 
     .boton_quiero:hover{
         background-color: #797066;
-        border: 2px solid #a39789;
+        border: 2px solid $colorclaro_botones;
     }
  }
 

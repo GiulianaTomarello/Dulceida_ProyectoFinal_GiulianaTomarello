@@ -2,6 +2,9 @@ body{
     width: 100%;
 }
 
+$vista: desktop;
+$boton_seccion:boton_seccion;
+
 .informativo{
     margin-bottom: 0%;
     padding-top: 5px;
@@ -84,6 +87,7 @@ section{
     .boton_seccion{
         background-color: rgba(0, 0, 0, 0.9);
         border: 1px solid rgba(0, 0, 0, 0.9);
+        font-size: 20px;
     }
 
     .boton_seccion:hover{
@@ -139,6 +143,8 @@ section{
  }
 
 
- 
+
+
+
 
 

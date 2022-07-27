@@ -2,14 +2,17 @@ body {
   width: 100%;
 }
 
+.flex, .fila1, .contenedorfila, .titulo_productos:hover, .titulo_productos, footer .bi, .texto_ayuda, nav .nav-item, nav .bi, .informativo {
+  display: flex;
+  justify-content: center;
+}
+
 .informativo {
   margin-bottom: 0%;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #a39789;
   color: white;
-  display: flex;
-  justify-content: center;
 }
 
 nav .navbar-brand {
@@ -27,8 +30,6 @@ nav .nav_principio {
 
 nav .bi {
   color: white;
-  display: flex;
-  justify-content: center;
 }
 
 nav .nav_final {
@@ -37,8 +38,6 @@ nav .nav_final {
   margin-right: 20px;
 }
 nav .nav-item {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   margin-left: 20px;
 }
@@ -73,8 +72,6 @@ nav .navbar-brand:hover {
 
 .texto_ayuda {
   background-color: #a39789;
-  display: flex;
-  justify-content: center;
   padding-top: 10px;
 }
 
@@ -84,8 +81,6 @@ footer {
 footer .bi {
   font-size: 20px;
   color: white;
-  display: flex;
-  justify-content: center;
   margin-top: 12px;
   transition: 1s all;
 }
@@ -99,58 +94,69 @@ footer .bi:hover {
   transform: scale(1.1);
 }
 
+.botones_secciones1 {
+  margin-top: 50px;
+}
+
+.botones_secciones2 {
+  margin-top: 50px;
+}
+
+.botones_secciones3 {
+  margin-top: 50px;
+}
+
 section {
   width: 100%;
   margin-top: 80px;
 }
-section .titulo_productos {
-  display: flex;
-  justify-content: center;
+
+.titulo_productos {
   transition: all 1s;
 }
-section .titulo_productos:hover {
-  display: flex;
-  justify-content: center;
+
+.titulo_productos:hover {
   color: #797066;
 }
-section .card {
+
+.card {
   margin: auto;
   margin-top: 30px;
 }
-section .titulos_seccionesproductos {
+
+.titulos_seccionesproductos {
   font-size: 20px;
   margin: auto;
 }
-section .contenedorfila {
-  display: flex;
-  justify-content: center;
-}
-section .fila1 {
+
+.fila1 {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 20px;
   background-color: #a39789;
   border-radius: 20px;
   padding: 30px;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
 }
-section .botones_secciones {
+
+.botones_secciones {
   margin-top: 15px;
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.9);
 }
-section .botones_secciones:hover {
+
+.botones_secciones:hover {
   background-color: #797066;
   border: 2px solid #a39789;
 }
-section .boton_quiero {
+
+.boton_quiero {
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.9);
   color: white;
 }
-section .boton_quiero:hover {
+
+.boton_quiero:hover {
   background-color: #797066;
   border: 2px solid #a39789;
 }

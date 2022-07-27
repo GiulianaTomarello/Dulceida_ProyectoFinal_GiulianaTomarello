@@ -2,16 +2,36 @@ body{
     width: 100%;
 }
 
+$rosaoscuro: #797066;
+$rosaclaro: #a39789;
+
+// implemento extend
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+// implemento mixin
+@mixin medidas($fontsize, $marginleft){
+    font-size: $fontsize;
+    margin-left: $marginleft;
+}
+
+$estiloboton: (
+    fondo: rgba(0, 0, 0, 0.9)
+    borde: 1px solid rgba(0, 0, 0, 0.9)
+    margen_alto: 15px
+);
 
 .informativo{
     margin-bottom: 0%;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #a39789;
+    background-color: $rosaclaro;
     color: white;
-    display: flex;
-    justify-content: center;
+    @extend .flex;
 }
+
 nav{
     .navbar-brand{
        padding-left: 40px;
@@ -34,8 +54,7 @@ nav{
 nav{
     .bi{
         color: white;
-        display: flex;
-        justify-content: center;
+        @extend .flex;
     }
 }
 
@@ -46,8 +65,7 @@ nav{
         margin-right: 20px;
     }
     .nav-item{
-        display: flex;
-        justify-content: center;
+        @extend .flex;
         flex-direction: column;
         margin-left: 20px;
     }
@@ -56,7 +74,7 @@ nav{
 
 nav{
     .nav-link:hover{
-        color: #a39789;
+        color: $rosaclaro;
     }
     .navbar-brand{
         transition: all 3s;
@@ -64,7 +82,7 @@ nav{
 
     .navbar-brand:hover{
         transform: scale(1.1);
-        color: #a39789;
+        color: $rosaclaro;
     }
 }
 
@@ -73,23 +91,19 @@ nav{
     margin-top: 100px;
 
     i{
-        font-size: 40px;
-        margin-left: 30px;
+        @include medidas (40px,30px);
     }
     .titulo_article{
-        font-size: 20px;
-        margin-left: 30px;
+        @include medidas (20px,30px);
     }
     .texto_article{
-        font-size: 15px;
-        margin-left: 30px;
+        @include medidas (15px,30px);
     }
  }
 
 .texto_ayuda{
-    background-color: #a39789;
-    display: flex;
-    justify-content: center;
+    background-color: $rosaclaro;
+    @extend .flex;
     padding-top: 10px;
  }
 
@@ -98,8 +112,7 @@ nav{
     .bi{
         font-size: 20px;
         color: white;
-        display: flex;
-        justify-content: center;
+        @extend .flex;
         margin-top: 12px;
         transition: 1s all;
     }
@@ -107,27 +120,34 @@ nav{
         color: white;
     }
     .nav-link:hover{
-        color: #a39789;
+        color: $rosaclaro;
     }
     .bi:hover{
         transform: scale(1.1);
     }
  }
 
+// implementación de for
+//  @for $i from 1 through 3 {
+//     .botones_secciones#{$i}{
+//         margin-top: 100px;
+//     }
+//  }
+
  section{
     width: 100%;
     margin-top: 80px;
+ }
+
 
     .titulo_productos{
-        display: flex;
-        justify-content: center;
+        @extend .flex;
         transition: all 1s;
     }
 
     .titulo_productos:hover{
-        display: flex;
-        justify-content: center;
-        color: #797066;
+        @extend .flex;
+        color: $rosaoscuro;
     }
 
     .card{
@@ -141,32 +161,30 @@ nav{
     }
 
     .contenedorfila{
-            display: flex;
-            justify-content: center;
+        @extend .flex;
     }
 
     .fila1{
         margin: auto;
         margin-top: 30px;
         margin-bottom: 20px;
-        background-color: #a39789;
+        background-color: $rosaclaro;
         border-radius: 20px;
         padding: 30px;
-        display: flex;
-        justify-content: center;
+        @extend .flex;
         flex-direction: column;
     }
 
     
-    .botones_secciones{
+    .boton_vermas{
         margin-top: 15px;
-        background-color: rgba(0, 0, 0, 0.9);
-        border: 1px solid rgba(0, 0, 0, 0.9);
+        background-color: map-get($estiloboton,fondo);
+        border: map-get($estiloboton,borde);
     }
 
-    .botones_secciones:hover{
-        background-color: #797066;
-        border: 2px solid #a39789;
+    .boton_vermas:hover{
+        background-color: $rosaoscuro;
+        border: 2px solid $rosaclaro;
     }
 
     .boton_quiero{
@@ -176,10 +194,10 @@ nav{
     }
 
     .boton_quiero:hover{
-        background-color: #797066;
-        border: 2px solid #a39789;
+        background-color: $rosaoscuro;
+        border: 2px solid $rosaclaro;
     }
- }
+ 
 
  @media screen and (min-width: 320px){
         .seccion_escritorio{

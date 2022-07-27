@@ -70,6 +70,7 @@ section .card-body {
 section .boton_seccion {
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.9);
+  font-size: 20px;
 }
 section .boton_seccion:hover {
   background-color: #a39789;

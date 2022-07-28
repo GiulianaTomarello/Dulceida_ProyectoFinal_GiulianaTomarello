@@ -1,7 +1,6 @@
 body{
     width: 100%;
 }
-<<<<<<< HEAD
 
 $rosaoscuro: #797066;
 $rosaclaro: #a39789;
@@ -23,19 +22,12 @@ $estiloboton: (
     borde: 1px solid rgba(0, 0, 0, 0.9)
     margen_alto: 15px
 );
-=======
-$colorclaro_botones: #a39789;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
 
 .informativo{
     margin-bottom: 0%;
     padding-top: 5px;
     padding-bottom: 5px;
-<<<<<<< HEAD
     background-color: $rosaclaro;
-=======
-    background-color: $colorclaro_botones;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
     color: white;
     @extend .flex;
 }
@@ -82,11 +74,7 @@ nav{
 
 nav{
     .nav-link:hover{
-<<<<<<< HEAD
         color: $rosaclaro;
-=======
-        color: $colorclaro_botones;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
     }
     .navbar-brand{
         transition: all 3s;
@@ -94,11 +82,7 @@ nav{
 
     .navbar-brand:hover{
         transform: scale(1.1);
-<<<<<<< HEAD
         color: $rosaclaro;
-=======
-        color: $colorclaro_botones;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
     }
 }
 
@@ -118,14 +102,8 @@ nav{
  }
 
 .texto_ayuda{
-<<<<<<< HEAD
     background-color: $rosaclaro;
     @extend .flex;
-=======
-    background-color: $colorclaro_botones;
-    display: flex;
-    justify-content: center;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
     padding-top: 10px;
  }
 
@@ -142,11 +120,7 @@ nav{
         color: white;
     }
     .nav-link:hover{
-<<<<<<< HEAD
         color: $rosaclaro;
-=======
-        color: $colorclaro_botones;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
     }
     .bi:hover{
         transform: scale(1.1);
@@ -194,11 +168,7 @@ nav{
         margin: auto;
         margin-top: 30px;
         margin-bottom: 20px;
-<<<<<<< HEAD
         background-color: $rosaclaro;
-=======
-        background-color: $colorclaro_botones;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
         border-radius: 20px;
         padding: 30px;
         @extend .flex;
@@ -212,15 +182,9 @@ nav{
         border: map-get($estiloboton,borde);
     }
 
-<<<<<<< HEAD
     .boton_vermas:hover{
         background-color: $rosaoscuro;
         border: 2px solid $rosaclaro;
-=======
-    .botones_secciones:hover{
-        background-color: #797066;
-        border: 2px solid $colorclaro_botones;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
     }
 
     .boton_quiero{
@@ -230,13 +194,8 @@ nav{
     }
 
     .boton_quiero:hover{
-<<<<<<< HEAD
         background-color: $rosaoscuro;
         border: 2px solid $rosaclaro;
-=======
-        background-color: #797066;
-        border: 2px solid $colorclaro_botones;
->>>>>>> 06a9f2e484edf5ca20962ebdbf2faab39b0eecbc
     }
  
 

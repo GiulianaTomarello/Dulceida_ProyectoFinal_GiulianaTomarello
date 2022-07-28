@@ -120,4 +120,13 @@ footer .nav-link:hover {
 }
 footer .bi:hover {
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 320px) {
+  section {
+    margin-top: 0px;
+  }
+  section .card {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -94,6 +94,7 @@ section{
         background-color: #a39789;
         border: 2px solid #a39789;
     }
+
  }
 
  .informacion{
@@ -142,7 +143,14 @@ section{
     }
  }
 
-
+ @media screen and (min-width: 320px){
+    section{
+        margin-top: 0px;
+        .card{
+            margin-top: 50px;
+        }
+    }
+}
 
 
 

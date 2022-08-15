@@ -1,10 +1,15 @@
-
+body{
+    width: 100%;
+}
+$rosaviejo: #ededed;
+$rosaclaro: #a39789;
+$rosaoscuro: #797066;
 
 .informativo{
     margin-bottom: 0%;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #a39789;
+    background-color: $rosaclaro;
     color: white;
     display: flex;
     justify-content: center;
@@ -53,7 +58,7 @@ nav{
 
 nav{
     .nav-link:hover{
-        color: #a39789;
+        color: $rosaclaro;
     }
     .navbar-brand{
         transition: all 3s;
@@ -61,12 +66,12 @@ nav{
 
     .navbar-brand:hover{
         transform: scale(1.1);
-        color: #a39789;
+        color: $rosaclaro;
     }
 }
 
 .informacion{
-    background-color: #ededed;
+    background-color: $rosaviejo;
     margin-top: 100px;
 
     i{
@@ -84,7 +89,7 @@ nav{
  }
 
 .texto_ayuda{
-    background-color: #a39789;
+    background-color: $rosaclaro;
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -104,7 +109,7 @@ nav{
         color: white;
     }
     .nav-link:hover{
-        color: #a39789;
+        color: $rosaclaro;
     }
     .bi:hover{
         transform: scale(1.1);
@@ -123,8 +128,8 @@ nav{
     }
 
     .boton_enviar:hover{
-        background-color: #797066;
-        border: 2px solid #a39789;
+        background-color: $rosaoscuro;
+        border: 2px solid $rosaclaro;
         transform: scale(1.1);
     }
 
@@ -133,11 +138,11 @@ nav{
     }
 
     .titulo_dudas:hover{
-        color:#797066;
+        color:$rosaoscuro;
     }
     form{
         margin-top: 60px;
-        background-color: #a39789;
+        background-color: $rosaclaro;
         padding: 30px;
         border-radius: 20px;
     }

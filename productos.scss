@@ -2,16 +2,17 @@ body{
     width: 100%;
 }
 
+// impremento de variables
 $rosaoscuro: #797066;
 $rosaclaro: #a39789;
 
-// implemento extend
+// implemento de extend
 .flex{
     display: flex;
     justify-content: center;
 }
 
-// implemento mixin
+// implemento de mixin
 @mixin medidas($fontsize, $marginleft){
     font-size: $fontsize;
     margin-left: $marginleft;
@@ -198,21 +199,4 @@ nav{
         border: 2px solid $rosaclaro;
     }
  
-
- @media screen and (min-width: 320px){
-        .seccion_escritorio{
-            display: none;
-        }
-        .seccion_celular{
-            display: block;
-        }
- }
-
- @media screen and (min-width: 550px){
-    .seccion_escritorio{
-        display: block;
-    }
-    .seccion_celular{
-        display: none;
-    }
-}
+   

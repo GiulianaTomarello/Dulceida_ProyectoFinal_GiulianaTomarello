@@ -1,15 +1,14 @@
 body{
     width: 100%;
 }
-
-$vista: desktop;
-$boton_seccion:boton_seccion;
+$rosaviejo: #ededed;
+$rosaclaro: #a39789;
 
 .informativo{
     margin-bottom: 0%;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #a39789;
+    background-color: $rosaclaro;
     color: white;
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@ nav{
 
 nav{
     .nav-link:hover{
-        color: #a39789;
+        color: $rosaclaro;
     }
     .navbar-brand{
         transition: all 3s;
@@ -66,7 +65,7 @@ nav{
 
     .navbar-brand:hover{
         transform: scale(1.1);
-        color: #a39789;
+        color: $rosaclaro;
     }
 }
 
@@ -91,14 +90,14 @@ section{
     }
 
     .boton_seccion:hover{
-        background-color: #a39789;
-        border: 2px solid #a39789;
+        background-color: $rosaclaro;
+        border: 2px solid $rosaclaro;
     }
 
  }
 
  .informacion{
-    background-color: #ededed;
+    background-color: $rosaviejo;
     margin-top: 100px;
 
     i{
@@ -116,7 +115,7 @@ section{
  }
 
  .texto_ayuda{
-    background-color: #a39789;
+    background-color: $rosaclaro;
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -136,21 +135,12 @@ section{
         color: white;
     }
     .nav-link:hover{
-        color: #a39789;
+        color: $rosaclaro;
     }
     .bi:hover{
         transform: scale(1.1);
     }
  }
-
- @media screen and (min-width: 320px){
-    section{
-        margin-top: 0px;
-        .card{
-            margin-top: 50px;
-        }
-    }
-}
 
 
 
